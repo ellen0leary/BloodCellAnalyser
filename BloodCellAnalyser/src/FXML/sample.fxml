@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.Controller">
+   <children>
+      <Button fx:id="selectImage" layoutX="239.0" layoutY="13.0" mnemonicParsing="false" onAction="#openImage" text="Select Image" />
+      <Text layoutX="46.0" layoutY="33.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Blood Cell Analayser">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Text>
+      <ImageView fx:id="imageView" fitHeight="270.0" fitWidth="302.0" layoutX="12.0" layoutY="101.0" pickOnBounds="true" preserveRatio="true" />
+      <Button fx:id="search" layoutX="457.0" layoutY="13.0" mnemonicParsing="false" onAction="#search" text="Search through Image" />
+      <ImageView fx:id="triImageView" fitHeight="270.0" fitWidth="302.0" layoutX="373.0" layoutY="101.0" pickOnBounds="true" preserveRatio="true" />
+      <Text layoutX="85.0" layoutY="85.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Origanal Version" />
+      <Text layoutX="464.0" layoutY="85.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tricolor Version" />
+      <Button fx:id="noiseReduction" layoutX="343.0" layoutY="13.0" mnemonicParsing="false" onAction="#reduceNoise" text="Noise Reduction" />
+      <TextField fx:id="numOfCellText" editable="false" layoutX="350.0" layoutY="382.0" />
+      <Text layoutX="257.0" layoutY="399.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Number of Cells" />
+   </children>
+</Pane>
